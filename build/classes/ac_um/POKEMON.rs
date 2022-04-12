@@ -1,0 +1,3 @@
+AC_UM.pokemons
+AC_UM.POKEMONS
+AC_UM.POKEMON
