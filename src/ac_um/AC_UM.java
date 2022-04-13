@@ -52,8 +52,8 @@ public class AC_UM {
              
          }
          
-    POKEMON maquina_1 = new POKEMON("Pikachu", "Eletricidade", 1);
-    POKEMON maquina_2 = new POKEMON("Magmar", "Fogo", 1);
+    POKEMON maquina_1 = new POKEMON("MaquinaP", "Eletricidade", 10);
+    POKEMON maquina_2 = new POKEMON("Magmar", "Fogo", 10);
         
        
     
@@ -65,16 +65,18 @@ public class AC_UM {
         
     //usando o metodo
     batalha.MEUPOKEMON(Avatar.getNome(), 
-            (int) Avatar.getVida(), 
-            (int)Avatar.getVida(),
-            (int)Avatar.getDefesa()
+            (int)Avatar.getVida(), 
+            (int)Avatar.getAtaque(),
+            (int)Avatar.getDefesa(),
+            (int)Avatar.getLevel()
     );
     
     //usando o metodo
     batalha.MAQUINA(maquina_1.getNome(),
             (int)maquina_1.getVida(), 
-            (int)maquina_1.getVida(),
-            (int)maquina_1.getDefesa()
+            (int)maquina_1.getAtaque(),
+            (int)maquina_1.getDefesa(),
+            (int)maquina_1.getLevel()
     );
     //usando o metodo 
     batalha.batalhar();
@@ -100,15 +102,17 @@ public class AC_UM {
             maquina_2.imprimaAtributos();
         
             batalha.MEUPOKEMON(Avatar.getNome(), 
-                (int) Avatar.getVida(), 
+                (int)Avatar.getVida(), 
                 (int)Avatar.getAtaque(),
-                (int)Avatar.getDefesa()
+                (int)Avatar.getDefesa(),
+                (int)Avatar.getLevel()
             );
 
             batalha.MAQUINA(maquina_2.getNome(),
                 (int)maquina_2.getVida(), 
                 (int)maquina_2.getVida(),
-                (int)maquina_2.getDefesa()
+                (int)maquina_2.getDefesa(),
+                (int)maquina_2.getLevel()
             );
 
             batalha.batalhar();

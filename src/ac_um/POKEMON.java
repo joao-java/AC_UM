@@ -18,7 +18,6 @@ public class POKEMON {
         
         calculaAtributos();
         calculaLevel();
-        
     }
 
     //GET Usamos get para obter informações. Esse tipo de método sempre retorna um valor.
@@ -59,7 +58,7 @@ public class POKEMON {
     }public void setVida(int vida){
      this.vida = vida;
     }
-    
+
      void imprimaAtributos(){
         System.out.print("________________\nNOME: " + this.nome 
             +"\nTIPO: " + this.tipo 
@@ -83,32 +82,32 @@ public class POKEMON {
     
         switch(this.tipo){
             case "Fogo":
-                this.ataque = 120;
-                this.defesa = 47;
+                this.ataque = 32;
+                this.defesa = 13;
                 this.vida = this.vida;
                 break;
             
             case "Agua":
-                this.ataque = 97;
-                this.defesa = 80;
+                this.ataque = 27;
+                this.defesa = 16;
                 this.vida = this.vida;
                 break;
             
             case "Terra":
-                this.ataque =  90;
-                this.defesa = 99;
+                this.ataque =  28;
+                this.defesa = 14;
                 this.vida = this.vida;
                 break;
             
             case "Voo":
-                this.ataque =  101;
-                this.defesa =  89;
+                this.ataque =  25;
+                this.defesa =  12;
                 this.vida = this.vida;
                 break;
                 
             case "Eletricidade":
-                this.ataque =  139;
-                this.defesa =  45;
+                this.ataque =  30;
+                this.defesa =  15;
                 this.vida = this.vida;
                 break;
         }
